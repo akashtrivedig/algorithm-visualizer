@@ -9,7 +9,7 @@
 		
 		"editor.minimap.autohide": true,
 		"editor.fontFamily": "Hack",
-		"editor.fontSize": 14,
+		"editor.fontSize": 16,
 		"editor.tabSize": 2,
 		"editor.minimap.enabled": true,
 		"editor.lineHeight": 1.8,
@@ -27,5 +27,8 @@
 		},
 		"editor.wordWrap": "wordWrapColumn",
 		"editor.wordWrapColumn": 120,
+		"[html]": {
+			"editor.defaultFormatter": "vscode.html-language-features"
+		},
 	}
 }
