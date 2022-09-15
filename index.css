@@ -1,0 +1,32 @@
+:root {
+  --block-color: #32adff;
+  --block-onhover-color: #ffa600;
+  --block-border-color: #9ee8ff;
+  --block-onhover-border-color: #ffd27d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(28, auto);
+}
+
+.block {
+  border: 4px solid var(--block-border-color);
+  border-radius: .2em;
+  height: 3em;
+  width: 3em;
+  background-color: var(--block-color);
+}
+
+.block:hover {
+  border-color: var(--block-onhover-border-color);
+  transition: .1s;
+  background-color: var(--block-onhover-color);
+}
