@@ -1,8 +1,8 @@
 :root {
   --block-color: #32adff;
   --website-color: #02131f;
-  --bar-color: #12af6d;
-  --barhover-color: #09794a;
+  --bar-color: #1282af;
+  --barhover-color: #11e2e2;
   --block-onhover-color: #ffa600;
   --block-border-color: #9ee8ff;
   --block-onhover-border-color: #ffd27d;
@@ -47,8 +47,8 @@ nav {
 
 .option-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* flex-direction: column; */
+  /* justify-content: center; */
 }
 
 .selection {
@@ -68,7 +68,7 @@ nav {
 #run {
   margin: 0 1em;
   background-color: var(--bar-color);
-  border-radius: .5em;
+  border-radius: 1em;
   border: 0px;
   color: #ffffff;
   font-weight: bold;
@@ -131,11 +131,21 @@ nav {
   justify-content: end;
 }
 
-.bar {
+.bar,
+.active-bar {
   background-color: var(--bar-color);
   width: 1em;
   border-radius: .5em;
   margin: 0 .5em;
+}
+
+.bar:hover {
+  cursor: pointer;
+  background-color: var(--barhover-color);
+}
+
+.active-bar {
+  background-color: var(--barhover-color);
 }
 
 .array-container {
